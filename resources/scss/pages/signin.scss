@@ -1,0 +1,94 @@
+.signin-form {
+    background-color: $auth-background-color;
+    height: 100vh;
+    padding: 50px 20px;
+
+    h2 {
+        color: $main-color;
+    }
+
+    .p-inputtext {
+        background-color: transparent;
+        font-size: 14px;
+        border-radius: 10px;
+        border: 1px solid $secondary-color;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.09);
+        height: 40px;
+        color: $main-color;
+
+        &:enabled:focus {
+            border-color: $secondary-color;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.09);
+        }
+
+        &:enabled:hover {
+            border: 1px solid $secondary-color;
+        }
+    }
+
+    .p-password .p-inputtext {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+        font-family: $main-font;
+    }
+
+    .p-button,
+    &:enabled:hover,
+    &:enabled:active,
+    &:enabled:focus {
+        background: $main-color !important;
+        color: $white;
+        border: none !important;
+        box-shadow: none !important;
+        font-size: 14px;
+        font-family: $main-font;
+        font-weight: normal;
+    }
+
+    .p-button.facebook-button,
+    .p-button.google-button {
+        height: 27.45px !important;
+        width: 27.45px !important;
+
+        span {
+            color: $white;
+        }
+    }
+
+    .p-button.facebook-button {
+        background: $facebook-color !important;
+    }
+
+    .p-button.google-button {
+        background: $google-color !important;
+    }
+
+    hr {
+        width: 100%;
+        border: none;
+        height: 2px;
+        background: linear-gradient(
+            to right,
+            $secondary-color 50%,
+            $secondary-color 50%
+        );
+        background-position: 0 50%;
+        background-size: 200% 100%;
+        transition: background-position 0.3s;
+        position: relative;
+
+        &:hover {
+            background-position: 100% 50%;
+        }
+    }
+
+    .footer {
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}

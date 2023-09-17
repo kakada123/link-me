@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Inter";
+    font-weight: 100 900;
+    font-style: normal;
+    src: url("../assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf")
+        format("truetype");
+}
+
+@import "variables";
+
+@import "pages/profile";
+
+@import "pages/signin";
+
+body {
+    margin: 0;
+    background: $body-color;
+    font-family: $main-font;
+}
+
+.main-background {
+    background: $background-color;
+}
