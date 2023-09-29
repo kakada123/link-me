@@ -108,7 +108,7 @@ watch(bio, updateAccountDetails);
 <template>
     <Toast />
     <Head>
-        <title>{{ account.name }}</title>
+        <title>{{ account?.name }}</title>
         <meta
             name="description"
             content="Getting to know me by social media link."
